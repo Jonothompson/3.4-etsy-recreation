@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<link rel="stylesheet" href="css/main.css">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul class="items">
+	</ul>
+	
+	
+	 <script id="item-template" type="text/x-handlebars-template">
+   		 <li>
+      		<h1>{{title}}</h1>
+      		<img src="{{Images.0.url_75x75}}">
+			<h3>${{price}} {{currency_code}}</h3>
+			<h3>{{Shop.shop_name}}</h3>
+   	 	</li>
+ 	 </script>
+	<script src="bower_components/handlebars/handlebars.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
