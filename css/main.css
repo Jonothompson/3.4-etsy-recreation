@@ -7,4 +7,64 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: dimgray; }
+  background-color: #F5F5F1;
+  box-sizing: border-box; }
+
+.itemColumns {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  float: right; }
+  .itemColumns::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.itemBox {
+  display: inline-block;
+  height: 200px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: white;
+  border-left: 1px solid #E1E3DF;
+  border-top: 1px solid #E1E3DF;
+  border-right: 1px solid #E1E3DF;
+  border-bottom: 1px solid #CBCCC9;
+  margin-bottom: 25px;
+  border-radius: 5px; }
+  .itemBox:last-child {
+    margin-right: 0; }
+  .itemBox img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%; }
+  .itemBox h1 {
+    width: 100%;
+    display: inline-block;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    margin-bottom: -5px;
+    padding-right: 18px; }
+  .itemBox h2 {
+    display: inline-block;
+    font-size: 8px;
+    color: #B2B2B2;
+    margin-left: 5px;
+    padding-right: 18px;
+    max-width: 50%; }
+  .itemBox h3 {
+    color: #7ABE4A;
+    display: inline-block;
+    font-size: 8px;
+    margin-left: 5px;
+    padding-right: 18px;
+    float: right;
+    max-width: 50%; }
+
+.itemBox:last-child {
+  margin-right: 2.35765%; }

@@ -7,16 +7,21 @@
 	<title>Document</title>
 </head>
 <body>
-	<ul class="items">
-	</ul>
+	<section class="itemColumns">
+	<div class="text-background">
+		<ul class="items">
+		</ul>
+	</div>
+	</section>
 	
 	
 	 <script id="item-template" type="text/x-handlebars-template">
-   		 <li>
-      		<h1>{{title}}</h1>
-      		<img src="{{Images.0.url_75x75}}">
+   		 <li class="itemBox">
+      		<img src="{{Images.0.url_170x135}}">
+			<h1>{{title}}</h1>
+			<h2>{{Shop.shop_name}}</h2>
 			<h3>${{price}} {{currency_code}}</h3>
-			<h3>{{Shop.shop_name}}</h3>
+
    	 	</li>
  	 </script>
 	<script src="bower_components/handlebars/handlebars.js"></script>
