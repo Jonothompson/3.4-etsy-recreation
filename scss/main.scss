@@ -3,19 +3,59 @@
 
 body {
 	background-color: #F5F5F1;
-	box-sizing: border-box;
+}
+
+.containerAll {
+	@include outer-container(100%);
+}
+
+header {
+	@include fill-parent();
+	@include row(table);
+	height: 100px;
+	background-color: #FFFFFF;
+}
+.sideBar {
+	@include span-columns(4);
+	@include pad();
+}
+
+.catagoriesContainer {
+	background-color: white;
+	border-left: 1px solid #E1E3DF;
+ 	border-top: 1px solid #E1E3DF;
+ 	border-right: 1px solid #E1E3DF;
+ 	border-bottom:  1px solid #CBCCC9;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	
+		a {
+			text-decoration: none;
+		}
+}
+
+.catagories {
+	list-style: none;
+}
+
+.catagory {
+	
+	a{
+			text-decoration: none;
+	}
+
 }
 
 .itemColumns {
-	@include outer-container (850px);
-	float: right;
+	@include span-columns(8);
+	@include reset-display;
+	@include pad();
 }
 
 
 .itemBox {
-	display: inline-block;
-	height: 200px;
 	@include span-columns(3);
+	height: 200px;
 	background-color: white;
 	border-left: 1px solid #E1E3DF;
  	border-top: 1px solid #E1E3DF;
