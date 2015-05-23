@@ -29,7 +29,9 @@ header {
 .sideBar {
   display: table-cell;
   width: 33.33333%;
-  padding: 2.35765%; }
+  margin-left: 8.5298%;
+  padding: 2.35765%;
+  margin-right: 0; }
 
 .catagoriesContainer {
   background-color: white;
@@ -57,7 +59,7 @@ header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
+  width: 27.49666%;
   height: 200px;
   background-color: white;
   border-left: 1px solid #E1E3DF;

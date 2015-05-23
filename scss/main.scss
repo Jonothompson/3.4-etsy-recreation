@@ -15,12 +15,17 @@ header {
 	height: 100px;
 	background-color: #FFFFFF;
 }
+
+
 .sideBar {
 	@include span-columns(4);
+	@include shift(1);
 	@include pad();
+	@include omega();
 }
 
 .catagoriesContainer {
+//	@include span-columns(3);
 	background-color: white;
 	border-left: 1px solid #E1E3DF;
  	border-top: 1px solid #E1E3DF;
@@ -54,7 +59,7 @@ header {
 
 
 .itemBox {
-	@include span-columns(3);
+	@include span-columns(3.5);
 	height: 200px;
 	background-color: white;
 	border-left: 1px solid #E1E3DF;
