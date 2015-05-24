@@ -82,7 +82,7 @@ header {
 
 .itemColumns {
 	@include outer-container();
-	@include span-columns(8);
+//	@include span-columns(8);
 	@include reset-display;
 	@include pad();
 }

@@ -1,0 +1,33 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+body {
+	background-color: #F5F5F1;	
+}
+
+
+section.mainContent {
+	border: 2px dashed darkblue;
+  	@include outer-container;
+	  
+  header {
+	@include fill-parent();
+	@include row();
+	height: 100px;
+	background-color: #FFFFFF;
+  }
+
+  aside {
+    @include span-columns(4);
+	height: 100px;
+	background-color: #CBCCC9;
+	border: 2px dashed darkblue;
+  }
+
+  article {
+    @include span-columns(8);
+	height: 100px;
+	background-color: #0192B5;
+	border: 2px dashed darkblue;
+  }
+}
