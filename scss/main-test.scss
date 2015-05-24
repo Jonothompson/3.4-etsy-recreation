@@ -8,7 +8,7 @@ body {
 header {
 	@include fill-parent();
 	@include row();
-	height: 100px;
+	height: 75px;
 	background-color: #FFFFFF;
 	border-bottom: 1px solid #E1E3DF;
 	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
@@ -27,6 +27,11 @@ section.mainContent {
 	  
 	  .allCats {
 		  margin-left: 180px;
+		  
+		  a {
+			  text-decoration: none;
+			  color: #0192B5;
+		  }
 	  }
 	  
 	  .sortBy {
@@ -69,10 +74,97 @@ section.mainContent {
 		margin-left: 70px;
 		border-radius: 5px;
 		padding-right: 45px;
+		padding-left: 18px;
 		padding-bottom: 15px;
 		width: 80%;
+		
+		a {
+		display: block;
+		text-decoration: none;
+		color: #0192B5;
+		margin-left: 35px;
+		margin-top: 10px;
+		}
+		
+		.rButton {
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			border-radius: 50%;
+		}
+		
+		h3 {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		
+		hr {
+			margin-top: 20px;
+		}	
+		
+		.min {
+			width: 30%;
+			display: inline-block;
+		}
+		
+		h4 {
+			display: inline-block;
+		}
+		
+		.max {
+
+			width: 30%;
+			display: inline-block;
+		}
+		
+		.cOne {
+			background-color: red;
+			width: 20px;
+			height: 20px;
+		}
+		
+		.cTwo {
+			background-color: orange;
+			width: 20px;
+			height: 20px;
+		}
+		
+		.cThree {
+			background-color: yellow;
+			width: 20px;
+			height: 20px;
+		}
+		
+		.cFour {
+			background-color: green;
+			width: 20px;
+			height: 20px;
+		}
+		
+		.cFive {
+			background-color: skyblue;
+			width: 20px;
+			height: 20px;
+		}
+		
+		.cSix {
+			background-color: purple;
+			width: 20px;
+			height: 20px;
+		}
+		
+		.cSeven {
+			background-color: black;
+			width: 20px;
+			height: 20px;
+		}
+		
+		.cEight {
+			background-color: white;
+			width: 20px;
+			height: 20px;
+		}
 	}
-	
   }
 
   .itemColumns {

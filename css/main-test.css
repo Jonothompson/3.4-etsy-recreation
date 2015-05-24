@@ -12,7 +12,7 @@ body {
 header {
   width: 100%;
   display: block;
-  height: 100px;
+  height: 75px;
   background-color: #FFFFFF;
   border-bottom: 1px solid #E1E3DF;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4); }
@@ -36,6 +36,9 @@ section.mainContent {
       margin-left: 70px; }
     section.mainContent .resultsBar .allCats {
       margin-left: 180px; }
+      section.mainContent .resultsBar .allCats a {
+        text-decoration: none;
+        color: #0192B5; }
     section.mainContent .resultsBar .sortBy {
       margin-left: 450px; }
   section.mainContent .sideBar {
@@ -73,8 +76,65 @@ section.mainContent {
       margin-left: 70px;
       border-radius: 5px;
       padding-right: 45px;
+      padding-left: 18px;
       padding-bottom: 15px;
       width: 80%; }
+      section.mainContent .sideBar .searchRefine a {
+        display: block;
+        text-decoration: none;
+        color: #0192B5;
+        margin-left: 35px;
+        margin-top: 10px; }
+      section.mainContent .sideBar .searchRefine .rButton {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border-radius: 50%; }
+      section.mainContent .sideBar .searchRefine h3 {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+      section.mainContent .sideBar .searchRefine hr {
+        margin-top: 20px; }
+      section.mainContent .sideBar .searchRefine .min {
+        width: 30%;
+        display: inline-block; }
+      section.mainContent .sideBar .searchRefine h4 {
+        display: inline-block; }
+      section.mainContent .sideBar .searchRefine .max {
+        width: 30%;
+        display: inline-block; }
+      section.mainContent .sideBar .searchRefine .cOne {
+        background-color: red;
+        width: 20px;
+        height: 20px; }
+      section.mainContent .sideBar .searchRefine .cTwo {
+        background-color: orange;
+        width: 20px;
+        height: 20px; }
+      section.mainContent .sideBar .searchRefine .cThree {
+        background-color: yellow;
+        width: 20px;
+        height: 20px; }
+      section.mainContent .sideBar .searchRefine .cFour {
+        background-color: green;
+        width: 20px;
+        height: 20px; }
+      section.mainContent .sideBar .searchRefine .cFive {
+        background-color: skyblue;
+        width: 20px;
+        height: 20px; }
+      section.mainContent .sideBar .searchRefine .cSix {
+        background-color: purple;
+        width: 20px;
+        height: 20px; }
+      section.mainContent .sideBar .searchRefine .cSeven {
+        background-color: black;
+        width: 20px;
+        height: 20px; }
+      section.mainContent .sideBar .searchRefine .cEight {
+        background-color: white;
+        width: 20px;
+        height: 20px; }
   section.mainContent .itemColumns {
     float: left;
     display: block;
