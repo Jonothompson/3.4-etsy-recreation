@@ -9,8 +9,19 @@ html {
 body {
   background-color: #F5F5F1; }
 
+header {
+  width: 100%;
+  display: block;
+  height: 100px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E1E3DF;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4); }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 section.mainContent {
-  border: 2px dashed darkblue;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -18,23 +29,20 @@ section.mainContent {
     clear: both;
     content: "";
     display: table; }
-  section.mainContent header {
-    width: 100%;
-    display: block;
-    height: 100px;
-    background-color: #FFFFFF; }
-    section.mainContent header::after {
-      clear: both;
-      content: "";
-      display: table; }
+  section.mainContent .resultsBar {
+    height: 50px;
+    padding-top: 28px; }
+    section.mainContent .resultsBar .showResults {
+      margin-left: 70px; }
+    section.mainContent .resultsBar .allCats {
+      margin-left: 180px; }
+    section.mainContent .resultsBar .sortBy {
+      margin-left: 450px; }
   section.mainContent .sideBar {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
-    height: 100px;
-    background-color: #CBCCC9;
-    border: 2px dashed darkblue; }
+    width: 31.76157%; }
     section.mainContent .sideBar:last-child {
       margin-right: 0; }
     section.mainContent .sideBar .catagoriesContainer {
@@ -44,9 +52,11 @@ section.mainContent {
       border-right: 1px solid #E1E3DF;
       border-bottom: 1px solid #CBCCC9;
       margin-bottom: 25px;
+      margin-left: 70px;
       border-radius: 5px;
       padding-right: 45px;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      width: 80%; }
     section.mainContent .sideBar a {
       display: block;
       text-decoration: none;
@@ -60,17 +70,16 @@ section.mainContent {
       border-right: 1px solid #E1E3DF;
       border-bottom: 1px solid #CBCCC9;
       margin-bottom: 25px;
+      margin-left: 70px;
       border-radius: 5px;
       padding-right: 45px;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      width: 80%; }
   section.mainContent .itemColumns {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    height: 100px;
-    background-color: #0192B5;
-    border: 2px dashed darkblue; }
+    width: 65.88078%; }
     section.mainContent .itemColumns:last-child {
       margin-right: 0; }
     section.mainContent .itemColumns .itemBox {
@@ -81,7 +90,7 @@ section.mainContent {
       display: block;
       margin-right: 2.35765%;
       width: 30.90859%;
-      height: 200px;
+      height: 220px;
       background-color: white;
       border-left: 1px solid #E1E3DF;
       border-top: 1px solid #E1E3DF;
@@ -127,15 +136,24 @@ section.mainContent {
       margin-top: 15px;
       margin-left: 5px;
       padding-right: 18px;
-      width: 50%; }
+      width: 45%; }
     section.mainContent .itemColumns h3 {
       color: #7ABE4A;
       display: inline-block;
       font-size: 11px;
       margin-top: 17px;
       margin-left: 5px;
-      padding-right: 18px;
       float: right;
-      width: 50%; }
+      width: 30%; }
     section.mainContent .itemColumns .itemBox:last-child {
       margin-right: 2.35765%; }
+
+footer {
+  width: 100%;
+  display: block;
+  background-color: #F5F5F1;
+  border-top: 1px solid #E1E3DF; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }
