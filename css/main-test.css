@@ -27,7 +27,7 @@ section.mainContent {
       clear: both;
       content: "";
       display: table; }
-  section.mainContent aside {
+  section.mainContent .sideBar {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -35,9 +35,35 @@ section.mainContent {
     height: 100px;
     background-color: #CBCCC9;
     border: 2px dashed darkblue; }
-    section.mainContent aside:last-child {
+    section.mainContent .sideBar:last-child {
       margin-right: 0; }
-  section.mainContent article {
+    section.mainContent .sideBar .catagoriesContainer {
+      background-color: white;
+      border-left: 1px solid #E1E3DF;
+      border-top: 1px solid #E1E3DF;
+      border-right: 1px solid #E1E3DF;
+      border-bottom: 1px solid #CBCCC9;
+      margin-bottom: 25px;
+      border-radius: 5px;
+      padding-right: 45px;
+      padding-bottom: 15px; }
+    section.mainContent .sideBar a {
+      display: block;
+      text-decoration: none;
+      color: #0192B5;
+      margin-left: 35px;
+      margin-top: 10px; }
+    section.mainContent .sideBar .searchRefine {
+      background-color: white;
+      border-left: 1px solid #E1E3DF;
+      border-top: 1px solid #E1E3DF;
+      border-right: 1px solid #E1E3DF;
+      border-bottom: 1px solid #CBCCC9;
+      margin-bottom: 25px;
+      border-radius: 5px;
+      padding-right: 45px;
+      padding-bottom: 15px; }
+  section.mainContent .itemColumns {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -45,5 +71,71 @@ section.mainContent {
     height: 100px;
     background-color: #0192B5;
     border: 2px dashed darkblue; }
-    section.mainContent article:last-child {
+    section.mainContent .itemColumns:last-child {
       margin-right: 0; }
+    section.mainContent .itemColumns .itemBox {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 30.90859%;
+      height: 200px;
+      background-color: white;
+      border-left: 1px solid #E1E3DF;
+      border-top: 1px solid #E1E3DF;
+      border-right: 1px solid #E1E3DF;
+      border-bottom: 1px solid #CBCCC9;
+      margin-bottom: 25px;
+      border-radius: 5px; }
+      section.mainContent .itemColumns .itemBox::after {
+        clear: both;
+        content: "";
+        display: table; }
+      section.mainContent .itemColumns .itemBox:last-child {
+        margin-right: 0; }
+    section.mainContent .itemColumns img {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section.mainContent .itemColumns img:last-child {
+        margin-right: 0; }
+    section.mainContent .itemColumns h1 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      display: inline-block;
+      font-size: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-bottom: -5px;
+      padding-right: 18px; }
+      section.mainContent .itemColumns h1:last-child {
+        margin-right: 0; }
+    section.mainContent .itemColumns h2 {
+      display: inline-block;
+      font-size: 12px;
+      color: #B2B2B2;
+      margin-top: 15px;
+      margin-left: 5px;
+      padding-right: 18px;
+      width: 50%; }
+    section.mainContent .itemColumns h3 {
+      color: #7ABE4A;
+      display: inline-block;
+      font-size: 11px;
+      margin-top: 17px;
+      margin-left: 5px;
+      padding-right: 18px;
+      float: right;
+      width: 50%; }
+    section.mainContent .itemColumns .itemBox:last-child {
+      margin-right: 2.35765%; }
