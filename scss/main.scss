@@ -6,7 +6,7 @@ body {
 }
 
 .containerAll {
-	@include outer-container(100%);
+	@include outer-container(85%);
 }
 
 header {
@@ -16,8 +16,8 @@ header {
 	background-color: #FFFFFF;
 }
 
-
 .sideBar {
+	@include outer-container();
 	@include span-columns(4);
 	@include shift(1);
 	@include pad();
@@ -25,7 +25,9 @@ header {
 }
 
 .catagoriesContainer {
-//	@include span-columns(3);
+//	@include outer-container;
+//	@include span-columns(4);
+//	@include omega();
 	background-color: white;
 	border-left: 1px solid #E1E3DF;
  	border-top: 1px solid #E1E3DF;
@@ -33,9 +35,16 @@ header {
  	border-bottom:  1px solid #CBCCC9;
 	margin-bottom: 25px;
 	border-radius: 5px;
+	padding-right: 45px;
+	padding-bottom: 15px;
+	display: block;
 	
 		a {
+			display: block;
 			text-decoration: none;
+			color: black;
+			margin-left: 15px;
+			margin-top: 10px;
 		}
 }
 
@@ -46,12 +55,33 @@ header {
 .catagory {
 	
 	a{
+			display: block;
 			text-decoration: none;
+			color: #0192B5;
+			margin-left: 35px;
+			margin-top: 10px;
 	}
 
 }
 
+.searchRefine {
+	@include outer-container;
+	@include span-columns(4);
+	@include omega();
+	background-color: white;
+	border-left: 1px solid #E1E3DF;
+ 	border-top: 1px solid #E1E3DF;
+ 	border-right: 1px solid #E1E3DF;
+ 	border-bottom:  1px solid #CBCCC9;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	padding-right: 45px;
+	padding-bottom: 15px;
+}
+
+
 .itemColumns {
+	@include outer-container();
 	@include span-columns(8);
 	@include reset-display;
 	@include pad();
@@ -59,7 +89,8 @@ header {
 
 
 .itemBox {
-	@include span-columns(3.5);
+	@include outer-container();
+	@include span-columns(3);
 	height: 200px;
 	background-color: white;
 	border-left: 1px solid #E1E3DF;
@@ -73,17 +104,18 @@ header {
 	img {
 		border-top-right-radius: 5px;
 		border-top-left-radius: 5px;
-		width: 100%;
+		@include span-columns(12);
 
 	}
 	
 	h1 {
-		width: 100%;
+		@include span-columns(12);
 		display: inline-block;
 		font-size: 10px;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		margin-top: 5px;
 		margin-left: 5px;
 		margin-bottom: -5px;
 		padding-right: 18px;
@@ -91,24 +123,40 @@ header {
 	
 	h2 {
 		display: inline-block;
-		font-size: 8px;
+		font-size: 12px;
 		color: #B2B2B2;
+		margin-top: 15px;
 		margin-left: 5px;
 		padding-right: 18px;
-		max-width: 50%;
+		width: 50%;
+
 	}
 	
 	h3 {
 		color: #7ABE4A;
 		display:  inline-block;
-		font-size: 8px;
+		font-size: 11px;
+		margin-top: 17px;
 		margin-left: 5px;
 		padding-right: 18px;
 		float: right;
-		max-width: 50%;
+		width: 50%;
+
 	}
 }
 
 .itemBox:last-child {
 	margin-right: 2.35765%;
+}
+
+footer {
+	border-top: 25px;
+	
+}
+
+.subscribeBox {
+	@include fill-parent();
+	@include row(table);
+	border: 5px solid #EFEFEB;
+	border-radius: 5px;
 }
