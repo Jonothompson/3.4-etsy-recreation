@@ -20,6 +20,89 @@ header {
     clear: both;
     content: "";
     display: table; }
+  header .logo {
+    margin-left: 200px;
+    display: inline-block; }
+  header form {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 65px; }
+    header form .searchBar {
+      height: 30px;
+      width: 250px; }
+    header form .searchButton {
+      font-size: 15px;
+      font-weight: bold;
+      color: white;
+      height: 29px;
+      width: 75px;
+      background-color: #0192B5;
+      margin-left: -5px;
+      outline: 0px;
+      border: 0px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+  header .browse {
+    vertical-align: top;
+    outline: 0px;
+    height: 29px;
+    display: inline-block;
+    width: 75px;
+    margin-top: 27px;
+    margin-left: 40px;
+    border-radius: 5px; }
+
+.home {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #B2B2B2; }
+  .home h3 {
+    font-size: 25px;
+    display: inline-block;
+    text-align: center; }
+  .home .fa {
+    padding-left: 7px; }
+
+.favorites {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #B2B2B2; }
+  .favorites h3 {
+    text-align: center;
+    font-size: 25px;
+    display: inline-block; }
+  .favorites .fa {
+    padding-left: 16px; }
+
+.you {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-right: 12px;
+  border-right: 1px solid #B2B2B2; }
+  .you h3 {
+    font-size: 25px;
+    display: inline-block; }
+  .you .fa {
+    padding-left: 4px; }
+
+.cart {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 170px; }
+  .cart h3 {
+    font-size: 25px;
+    display: inline-block; }
+  .cart .fa {
+    padding-left: 2px; }
 
 section.mainContent {
   max-width: 68em;
@@ -80,16 +163,19 @@ section.mainContent {
       padding-bottom: 15px;
       width: 80%; }
       section.mainContent .sideBar .searchRefine a {
-        display: block;
+        display: inline-block;
         text-decoration: none;
+        width: 75%;
         color: #0192B5;
-        margin-left: 35px;
+        margin-left: 10px;
         margin-top: 10px; }
       section.mainContent .sideBar .searchRefine .rButton {
         width: 20px;
         height: 20px;
         display: inline-block;
         border-radius: 50%; }
+      section.mainContent .sideBar .searchRefine .oOp {
+        width: 80%; }
       section.mainContent .sideBar .searchRefine h3 {
         margin-top: 15px;
         margin-bottom: 15px; }
